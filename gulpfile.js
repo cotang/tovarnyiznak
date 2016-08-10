@@ -48,7 +48,8 @@ var path = {
     img: 'build/img/',
     fonts: 'build/fonts/',
     sprites: 'src/img/',
-    spritesCss: 'src/css/partials/abstracts/'
+    spritesCss: 'src/css/partials/abstracts/',
+    deploy: 'build/**/*'
   },
   src: {
     html: './src/html/*.pug',
@@ -200,8 +201,7 @@ gulp.task('watch', ['browserSync'], function(){
 
 // Deploy on github.io
 gulp.task('deploy', function() {
-  gulp.src('path.build')
-//  gulp.src('./build/**/*')
+  return gulp.src(path.build.deploy)
     .pipe(ghPages());
 });
 
