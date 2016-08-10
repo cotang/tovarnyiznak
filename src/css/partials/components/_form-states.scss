@@ -1,0 +1,16 @@
+.has-success{
+  input, textarea{
+    border: 2px solid $success;
+  }
+}
+.has-error{
+  input, textarea{
+    border: 2px solid $error;
+  }
+  .help-block-error{
+    display: block;
+  }
+}
+.help-block{
+  display: none;
+}

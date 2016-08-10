@@ -1,0 +1,85 @@
+.doc-gallery{
+  background-color: $light-grey; 
+  padding: 30px 80px 40px;
+  @include mq($from:xs, $until:md){
+    padding: 30px 20px 40px;
+  }
+
+  &__title{
+    margin: 0 0 30px;
+    font-size: $font-size-title;
+    font-weight: $bold;
+  }
+  &__gallery{
+    margin: 0 50px;
+    @include mq($from:xs, $until:xl){
+      margin: 0 20px;
+    }
+  }
+  &__img{
+    display: block;
+    width: 160px; 
+    margin: 0 15px;
+
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border: 2px solid $orange;
+    }
+  }
+  &__modal{
+    display: none;
+    z-index: 9;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid $orange; 
+       
+    img{
+      // width: auto;
+      // height: auto;
+      // max-height: 100vh;
+      // display: block;      
+    }
+  }
+}
+.slick-arrow{
+  display: block;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  outline: none; 
+  padding: 0;   
+  width: 12px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+.slick-prev{
+  left: 0;
+  transform: translate(-200%, -50%);
+  background-image: url(../img/arrow-prev.png); 
+}
+.slick-next{
+  right: 0;
+  transform: translate(200%, -50%);   
+  background-image: url(../img/arrow-next.png);    
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.8);
+  cursor: pointer;
+  display: none;
+}

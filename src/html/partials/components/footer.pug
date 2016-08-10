@@ -1,0 +1,47 @@
+include ../abstracts/bemto/bemto.pug
+
+// Footer
++b.FOOTER.footer
+  // Nav menu
+  +b.NAV.nav
+    +e.UL.list
+      +e.item 
+        +e.link--active(href="index.html") Главная
+      +e.item 
+        +e.link(href="page.html") Торговая марка
+      +e.item
+        +e.link(href="page.html") Маркировка продукции
+        +b.UL.dropdown-menu
+          +e.item 
+            +e.link(href="page.html") Маркировка упаковки
+          +e.item 
+            +e.link(href="page.html") Маркировка товара
+          +e.item 
+            +e.link(href="page.html") Длинный пункт меню, который не влезает
+          +e.item
+            +e.link(href="page.html") Маркировка товара
+      +e.item
+        +e.link(href="page.html") Регистрация товарного знака
+      +e.item
+        +e.link(href="page.html") Договоры
+      +e.item
+        +e.link(href="page.html") Информация
+      +e.item
+        +e.link(href="page-contacts.html") Контакты 
+  // Info
+  +e.info
+    +e.contacts
+      +e.P.email
+        a(href="mailto:info@tovarnyiznak.ru", target="_blank") info@tovarnyiznak.ru
+      +e.P.tel 
+        a(href="tel:+78123321705", target="_blank") +7 812 332-17-05
+      +e.P.tel 
+        a(href="tel:+78129279450", target="_blank") +7 812 927-94-50
+    +e.P.copyright © 2006 - 2016 Товарный Знак
+    // RSS
+    +e.rss
+      img(src="img/rss.jpg", alt="rss", title="rss")
++b.overlay
+
+
+

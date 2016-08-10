@@ -1,0 +1,283 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$s-adv-check-name: 's-adv-check';
+$s-adv-check-x: 59px;
+$s-adv-check-y: 154px;
+$s-adv-check-offset-x: -59px;
+$s-adv-check-offset-y: -154px;
+$s-adv-check-width: 57px;
+$s-adv-check-height: 63px;
+$s-adv-check-total-width: 351px;
+$s-adv-check-total-height: 279px;
+$s-adv-check-image: '../img/png-sprite.png';
+$s-adv-check: (59px, 154px, -59px, -154px, 57px, 63px, 351px, 279px, '../img/png-sprite.png', 's-adv-check', );
+$s-adv-dollar-name: 's-adv-dollar';
+$s-adv-dollar-x: 300px;
+$s-adv-dollar-y: 50px;
+$s-adv-dollar-offset-x: -300px;
+$s-adv-dollar-offset-y: -50px;
+$s-adv-dollar-width: 38px;
+$s-adv-dollar-height: 59px;
+$s-adv-dollar-total-width: 351px;
+$s-adv-dollar-total-height: 279px;
+$s-adv-dollar-image: '../img/png-sprite.png';
+$s-adv-dollar: (300px, 50px, -300px, -50px, 38px, 59px, 351px, 279px, '../img/png-sprite.png', 's-adv-dollar', );
+$s-adv-star-name: 's-adv-star';
+$s-adv-star-x: 300px;
+$s-adv-star-y: 0px;
+$s-adv-star-offset-x: -300px;
+$s-adv-star-offset-y: 0px;
+$s-adv-star-width: 51px;
+$s-adv-star-height: 50px;
+$s-adv-star-total-width: 351px;
+$s-adv-star-total-height: 279px;
+$s-adv-star-image: '../img/png-sprite.png';
+$s-adv-star: (300px, 0px, -300px, 0px, 51px, 50px, 351px, 279px, '../img/png-sprite.png', 's-adv-star', );
+$s-button-phone-name: 's-button-phone';
+$s-button-phone-x: 300px;
+$s-button-phone-y: 109px;
+$s-button-phone-offset-x: -300px;
+$s-button-phone-offset-y: -109px;
+$s-button-phone-width: 25px;
+$s-button-phone-height: 30px;
+$s-button-phone-total-width: 351px;
+$s-button-phone-total-height: 279px;
+$s-button-phone-image: '../img/png-sprite.png';
+$s-button-phone: (300px, 109px, -300px, -109px, 25px, 30px, 351px, 279px, '../img/png-sprite.png', 's-button-phone', );
+$s-button-question-name: 's-button-question';
+$s-button-question-x: 300px;
+$s-button-question-y: 139px;
+$s-button-question-offset-x: -300px;
+$s-button-question-offset-y: -139px;
+$s-button-question-width: 17px;
+$s-button-question-height: 31px;
+$s-button-question-total-width: 351px;
+$s-button-question-total-height: 279px;
+$s-button-question-image: '../img/png-sprite.png';
+$s-button-question: (300px, 139px, -300px, -139px, 17px, 31px, 351px, 279px, '../img/png-sprite.png', 's-button-question', );
+$s-more-document-name: 's-more-document';
+$s-more-document-x: 90px;
+$s-more-document-y: 0px;
+$s-more-document-offset-x: -90px;
+$s-more-document-offset-y: 0px;
+$s-more-document-width: 72px;
+$s-more-document-height: 85px;
+$s-more-document-total-width: 351px;
+$s-more-document-total-height: 279px;
+$s-more-document-image: '../img/png-sprite.png';
+$s-more-document: (90px, 0px, -90px, 0px, 72px, 85px, 351px, 279px, '../img/png-sprite.png', 's-more-document', );
+$s-more-eagle-name: 's-more-eagle';
+$s-more-eagle-x: 0px;
+$s-more-eagle-y: 0px;
+$s-more-eagle-offset-x: 0px;
+$s-more-eagle-offset-y: 0px;
+$s-more-eagle-width: 90px;
+$s-more-eagle-height: 95px;
+$s-more-eagle-total-width: 351px;
+$s-more-eagle-total-height: 279px;
+$s-more-eagle-image: '../img/png-sprite.png';
+$s-more-eagle: (0px, 0px, 0px, 0px, 90px, 95px, 351px, 279px, '../img/png-sprite.png', 's-more-eagle', );
+$s-process-hand-name: 's-process-hand';
+$s-process-hand-x: 162px;
+$s-process-hand-y: 44px;
+$s-process-hand-offset-x: -162px;
+$s-process-hand-offset-y: -44px;
+$s-process-hand-width: 70px;
+$s-process-hand-height: 58px;
+$s-process-hand-total-width: 351px;
+$s-process-hand-total-height: 279px;
+$s-process-hand-image: '../img/png-sprite.png';
+$s-process-hand: (162px, 44px, -162px, -44px, 70px, 58px, 351px, 279px, '../img/png-sprite.png', 's-process-hand', );
+$s-process-mail-name: 's-process-mail';
+$s-process-mail-x: 162px;
+$s-process-mail-y: 0px;
+$s-process-mail-offset-x: -162px;
+$s-process-mail-offset-y: 0px;
+$s-process-mail-width: 94px;
+$s-process-mail-height: 44px;
+$s-process-mail-total-width: 351px;
+$s-process-mail-total-height: 279px;
+$s-process-mail-image: '../img/png-sprite.png';
+$s-process-mail: (162px, 0px, -162px, 0px, 94px, 44px, 351px, 279px, '../img/png-sprite.png', 's-process-mail', );
+$s-process-mic-name: 's-process-mic';
+$s-process-mic-x: 0px;
+$s-process-mic-y: 154px;
+$s-process-mic-offset-x: 0px;
+$s-process-mic-offset-y: -154px;
+$s-process-mic-width: 59px;
+$s-process-mic-height: 67px;
+$s-process-mic-total-width: 351px;
+$s-process-mic-total-height: 279px;
+$s-process-mic-image: '../img/png-sprite.png';
+$s-process-mic: (0px, 154px, 0px, -154px, 59px, 67px, 351px, 279px, '../img/png-sprite.png', 's-process-mic', );
+$s-process-pin-name: 's-process-pin';
+$s-process-pin-x: 256px;
+$s-process-pin-y: 0px;
+$s-process-pin-offset-x: -256px;
+$s-process-pin-offset-y: 0px;
+$s-process-pin-width: 44px;
+$s-process-pin-height: 63px;
+$s-process-pin-total-width: 351px;
+$s-process-pin-total-height: 279px;
+$s-process-pin-image: '../img/png-sprite.png';
+$s-process-pin: (256px, 0px, -256px, 0px, 44px, 63px, 351px, 279px, '../img/png-sprite.png', 's-process-pin', );
+$s-why-camera-name: 's-why-camera';
+$s-why-camera-x: 75px;
+$s-why-camera-y: 95px;
+$s-why-camera-offset-x: -75px;
+$s-why-camera-offset-y: -95px;
+$s-why-camera-width: 65px;
+$s-why-camera-height: 47px;
+$s-why-camera-total-width: 351px;
+$s-why-camera-total-height: 279px;
+$s-why-camera-image: '../img/png-sprite.png';
+$s-why-camera: (75px, 95px, -75px, -95px, 65px, 47px, 351px, 279px, '../img/png-sprite.png', 's-why-camera', );
+$s-why-eye-name: 's-why-eye';
+$s-why-eye-x: 162px;
+$s-why-eye-y: 102px;
+$s-why-eye-offset-x: -162px;
+$s-why-eye-offset-y: -102px;
+$s-why-eye-width: 68px;
+$s-why-eye-height: 45px;
+$s-why-eye-total-width: 351px;
+$s-why-eye-total-height: 279px;
+$s-why-eye-image: '../img/png-sprite.png';
+$s-why-eye: (162px, 102px, -162px, -102px, 68px, 45px, 351px, 279px, '../img/png-sprite.png', 's-why-eye', );
+$s-why-gift-name: 's-why-gift';
+$s-why-gift-x: 116px;
+$s-why-gift-y: 154px;
+$s-why-gift-offset-x: -116px;
+$s-why-gift-offset-y: -154px;
+$s-why-gift-width: 51px;
+$s-why-gift-height: 62px;
+$s-why-gift-total-width: 351px;
+$s-why-gift-total-height: 279px;
+$s-why-gift-image: '../img/png-sprite.png';
+$s-why-gift: (116px, 154px, -116px, -154px, 51px, 62px, 351px, 279px, '../img/png-sprite.png', 's-why-gift', );
+$s-why-lightning-name: 's-why-lightning';
+$s-why-lightning-x: 0px;
+$s-why-lightning-y: 95px;
+$s-why-lightning-offset-x: 0px;
+$s-why-lightning-offset-y: -95px;
+$s-why-lightning-width: 75px;
+$s-why-lightning-height: 59px;
+$s-why-lightning-total-width: 351px;
+$s-why-lightning-total-height: 279px;
+$s-why-lightning-image: '../img/png-sprite.png';
+$s-why-lightning: (0px, 95px, 0px, -95px, 75px, 59px, 351px, 279px, '../img/png-sprite.png', 's-why-lightning', );
+$s-works-loupe-name: 's-works-loupe';
+$s-works-loupe-x: 0px;
+$s-works-loupe-y: 221px;
+$s-works-loupe-offset-x: 0px;
+$s-works-loupe-offset-y: -221px;
+$s-works-loupe-width: 47px;
+$s-works-loupe-height: 58px;
+$s-works-loupe-total-width: 351px;
+$s-works-loupe-total-height: 279px;
+$s-works-loupe-image: '../img/png-sprite.png';
+$s-works-loupe: (0px, 221px, 0px, -221px, 47px, 58px, 351px, 279px, '../img/png-sprite.png', 's-works-loupe', );
+$s-works-mktu-name: 's-works-mktu';
+$s-works-mktu-x: 47px;
+$s-works-mktu-y: 221px;
+$s-works-mktu-offset-x: -47px;
+$s-works-mktu-offset-y: -221px;
+$s-works-mktu-width: 64px;
+$s-works-mktu-height: 42px;
+$s-works-mktu-total-width: 351px;
+$s-works-mktu-total-height: 279px;
+$s-works-mktu-image: '../img/png-sprite.png';
+$s-works-mktu: (47px, 221px, -47px, -221px, 64px, 42px, 351px, 279px, '../img/png-sprite.png', 's-works-mktu', );
+$s-works-shield-name: 's-works-shield';
+$s-works-shield-x: 167px;
+$s-works-shield-y: 154px;
+$s-works-shield-offset-x: -167px;
+$s-works-shield-offset-y: -154px;
+$s-works-shield-width: 52px;
+$s-works-shield-height: 55px;
+$s-works-shield-total-width: 351px;
+$s-works-shield-total-height: 279px;
+$s-works-shield-image: '../img/png-sprite.png';
+$s-works-shield: (167px, 154px, -167px, -154px, 52px, 55px, 351px, 279px, '../img/png-sprite.png', 's-works-shield', );
+$spritesheet-width: 351px;
+$spritesheet-height: 279px;
+$spritesheet-image: '../img/png-sprite.png';
+$spritesheet-sprites: ($s-adv-check, $s-adv-dollar, $s-adv-star, $s-button-phone, $s-button-question, $s-more-document, $s-more-eagle, $s-process-hand, $s-process-mail, $s-process-mic, $s-process-pin, $s-why-camera, $s-why-eye, $s-why-gift, $s-why-lightning, $s-works-loupe, $s-works-mktu, $s-works-shield, );
+$spritesheet: (351px, 279px, '../img/png-sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

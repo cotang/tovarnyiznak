@@ -1,0 +1,24 @@
+mixin office(items)
+  each item in items
+    +b.SECTION.office
+      +e.H2.title #{item.title}
+      +e.flags
+        each flag in item.languages
+          img(src= "../img/" + flag[0] alt= flag[1] title= flag[1])
+      +e.details
+        +e.P.address #{item.address}
+        +e.P.email 
+          a(href= "mailto:" + item.email, target="_blank") #{item.email}
+        if item.fax
+          +e.P.fax Тел/факс:
+            a(href= "tel:" + item.fax, target="_blank") #{item.fax}
+        +e.P.tel Телефон:
+          a(href= "tel:" + item.tel, target="_blank") #{item.tel}
+        +e.P.hours Мы работаем с 
+          span #{item.workFrom}
+          =' до '
+          span #{item.workTo}
+          =' по местному времени'
+      +e.map
+        iframe(src= item.mapSource frameborder="0" style="border:0" allowfullscreen)  
+

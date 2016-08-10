@@ -1,0 +1,71 @@
+.nav{
+  padding: 0 80px;
+  font-size: $font-size-nav;
+  @include mq($from:xs, $until:md){
+    padding: 0 20px;
+  }
+  
+  &__list{
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: -10px;
+    margin-right: -10px;
+    @include mq($from:xs, $until:xl){
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    } 
+  }
+  &__item{
+    padding: 10px;
+    position: relative;
+    &:before{
+      display: none;
+    }
+    &:hover, &:focus, &:active{
+      background-color: $light-grey;
+      .nav__link{
+        color: $text-color; 
+      }
+      .nav__link--active{
+        color: $orange; 
+      }      
+      .dropdown-menu{
+        display: block;
+      }
+    }
+  }
+  &__link{
+    color: $text-color-white; 
+    &--active{
+      color: $orange; 
+    }
+  }
+}
+
+.dropdown-menu{
+  width: 320px;                   /* возможно нужно убрать */ 
+  padding-left: 0;
+  margin: 0;
+  background-color: $light-grey;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  &__item{
+    padding: 10px;
+    position: relative;
+    &:hover, &:focus, &:active{
+      background-color: $light-grey;
+      .nav__link{
+        color: $text-color; 
+      }
+      .dropdown-menu{
+        display: block;
+      }
+    }
+  }
+}

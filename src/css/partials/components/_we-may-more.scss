@@ -1,0 +1,57 @@
+.we-may-more{
+  background-color: $light-grey; 
+  padding: 10px 80px 30px;
+  @include mq($from:xs, $until:md){
+    padding: 10px 20px 30px;
+  }
+
+  &__title{
+    margin: 0;
+    font-size: $font-size-title;
+    font-weight: $bold;
+  }
+  &__list{
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    @include mq($from:xs, $until:lg){
+      display: block;
+    }
+  }
+  &__item{
+    font-size: $font-size-text;
+    text-align: left;
+    position: relative;
+    margin: 30px 0 30px 120px;
+    @include mq($from:xs, $until:sm){
+      margin-left: 0;
+      margin-top: 140px;
+      text-align: center;
+    }
+
+    &:before{
+      content: "";
+      border-radius: inherit;
+      border: none;
+      display: block;
+      position: absolute;
+      left: -60px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin-right: 10px; 
+      @include mq($from:xs, $until:sm){
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -120%);
+        margin-right: 0;
+      }       
+    } 
+    &:nth-of-type(1):before{
+      @include sprite($s-more-eagle);
+    }  
+    &:nth-of-type(2):before{
+      @include sprite($s-more-document);
+    }  
+  }
+}

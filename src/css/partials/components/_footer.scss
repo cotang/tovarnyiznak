@@ -1,0 +1,61 @@
+.footer{
+  width: 100%;
+  max-width: 1200px;       /* заменить на переменную! */
+  margin: 0 auto;
+  background-color: $black;
+  color: $text-color-white;
+  padding: 0 0 30px;
+  @include mq($from:xs, $until:sm){
+    padding: 0;
+  } 
+
+  &__info{
+    padding: 0 80px;
+    text-align: right;
+    position: relative;
+    @include mq($from:xs, $until:md){
+      padding: 0 20px;
+    }
+
+  }
+  &__contacts{
+    margin: 20px 0 10px;    
+  }
+  &__email{
+    display: inline-block;
+    margin: 0;
+    a{
+      color: $white;
+    }
+  }
+  &__tel{
+    display: inline-block;
+    margin: 0 0 0 20px;
+    a{
+      color: $white;
+    }
+  }
+  &__copyright{
+    color: $orange;
+    margin: 0;
+    padding: 10px 0 30px;
+  }
+  &__rss{
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    @include mq($from:xs, $until:sm){
+      bottom: 80px;
+      left: 20px;
+    }    
+  }
+
+  .nav{
+    border-bottom: 1px solid $white;    
+  }
+  .dropdown-menu{
+    bottom: inherit;
+    top: 0;
+    transform: translateY(-100%);
+  }
+}

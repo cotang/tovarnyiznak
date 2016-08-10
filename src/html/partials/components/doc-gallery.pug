@@ -1,0 +1,12 @@
+include ../abstracts/mixins/_slide.pug
+include ../abstracts/bemto/bemto.pug
+
+// Documents gallery
++b.SECTION.doc-gallery
+  +e.H2.title Мы помогли оформить:
+  +e.gallery
+    - for (var i = 1; i < 8; ++i){
+        +slide("review01.jpg","Документ1")
+    - }
+
+

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+// 3rd party
+@import "partials/abstracts/variables";
+@import  "vendor/normalize";
+@import  "vendor/mq";
+@import  "vendor/slick";
+
+// Abstracts
+// @import "partials/abstracts/functions";
+// @import "partials/abstracts/mixins";
+// @import "partials/abstracts/placeholders";
+// @import "partials/abstracts/helpers";
+@import "partials/abstracts/png-sprite";
+
+// Base
+// @import "partials/base/typography";
+@import "partials/base/template";
+
+// Components
+@import "partials/components/header";
+@import "partials/components/footer";
+@import "partials/components/page";
+
+@import "partials/components/btn";
+@import "partials/components/nav";
+@import "partials/components/promo";
+@import "partials/components/why-trademark";
+@import "partials/components/order";
+@import "partials/components/development";
+@import "partials/components/works";
+@import "partials/components/we-may-more";
+@import "partials/components/twelve-months";
+@import "partials/components/process";
+@import "partials/components/doc-gallery";
+@import "partials/components/advantages";
+@import "partials/components/office";
+
+@import "partials/components/form";
+@import "partials/components/form-states";
+@import "partials/components/captcha";
+
+

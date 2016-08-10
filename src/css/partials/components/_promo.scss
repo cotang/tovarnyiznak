@@ -1,0 +1,15 @@
+.promo{
+  background-color: $white;
+  padding: 45px 80px 70px;
+  font-size: $font-size-text;
+  @include mq($from:xs, $until:md){
+    padding: 40px 20px;
+  }
+
+  &__text{
+    margin: 0;
+    &:last-of-type{
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.header{
+  width: 100%;
+  max-width: 1200px;       /* заменить на переменную! */
+  margin: 0 auto;
+  background-color: $black;
+  color: $text-color-white;
+  padding: 20px 0 0;
+
+  &__inner{
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    @include mq($from:xs, $until:lg){
+      display: block;
+    }
+    @include mq($from:xs, $until:md){
+      padding: 0 20px;
+    }    
+  }
+  &__logo{
+    padding-left: 20px;
+    border-left: 30px solid $orange;
+    max-width: 400px;
+    @include mq($from:xs, $until:lg){
+      margin: 0 auto 20px;
+    }    
+  }
+  &__title{
+    margin: 0;
+    font-size: $font-size-logo;
+    font-weight: $regular;
+    @include mq($from:xs, $until:sm){
+      font-size: $font-size-logo * 0.8;
+    }     
+  }
+  &__slogan{
+    margin: 10px 0 0;
+    font-size: $font-size-slogan;
+    @include mq($from:xs, $until:sm){
+      font-size: $font-size-slogan * 0.8;
+    }         
+  }
+  &__info{
+    text-align: right;
+    @include mq($from:xs, $until:lg){
+      text-align: center;
+    }    
+  }
+  &__contact-info{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    font-weight: 600;
+    font-size: $font-size-info;
+    margin-bottom: 10px;
+    @include mq($from:xs, $until:lg){
+      justify-content: center;
+    } 
+    @include mq($from:xs, $until:sm){
+      display: block;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }       
+  }
+  &__email{
+    margin: 10px 0;
+    a{
+      color: $white;
+    }
+  }
+  &__tel-wrapper{
+    margin-left: 20px;
+    @include mq($from:xs, $until:sm){
+      margin-left: 0;
+    }     
+
+    a{
+      display: block;
+      margin: 10px 0;
+      color: $white;
+    }
+  }
+  .nav{
+    margin-top: 30px;
+    border-top: 1px solid $white;
+  }
+  .btn{
+    margin-left: 20px;
+    @include mq($from:xs, $until:sm){
+      margin-left: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }    
+  }
+}
