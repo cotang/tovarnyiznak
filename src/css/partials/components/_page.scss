@@ -1,7 +1,19 @@
 .page{
+  text-align: left;
   background-color: $light-grey;
   padding: 20px;
-
+  &__title{
+    margin: 0;
+    padding: 20px 0;
+  } 
+  &__form-wrapper{
+    width: 50%;
+    min-width: 500px;
+    margin: 20px auto 10px;
+    @include mq($from:xs, $until:sm){
+      min-width: 100%;
+    }     
+  }
   &__float-form{
     width: 40%;
     min-width: 400px;
@@ -14,24 +26,6 @@
     @include mq($from:xs, $until:sm){
       min-width: 100%;
     }        
-  }
-}
-.page{
-  &__form-wrapper{
-    width: 50%;
-    min-width: 500px;
-    margin: 0 auto;
-    @include mq($from:xs, $until:sm){
-      min-width: 100%;
-    }     
-  }
-}
-
-.content{
-  text-align: left;
-  &__title{
-    margin: 0;
-    padding: 20px 0;
   }
 }
 

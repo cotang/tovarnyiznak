@@ -4,17 +4,17 @@
   margin: 0 auto;
   background-color: $black;
   color: $text-color-white;
-  padding: 0 0 30px;
   @include mq($from:xs, $until:sm){
     padding: 0;
   } 
 
   &__info{
-    padding: 0 80px;
+    padding: 0 80px 30px;
     text-align: right;
     position: relative;
+    margin-top: 20px;
     @include mq($from:xs, $until:md){
-      padding: 0 20px;
+      padding: 0 20px 30px;
     }
 
   }
@@ -42,7 +42,7 @@
   }
   &__rss{
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 80px;
     @include mq($from:xs, $until:sm){
       bottom: 80px;
@@ -53,9 +53,9 @@
   .nav{
     border-bottom: 1px solid $white;    
   }
-  .dropdown-menu{
-    bottom: inherit;
-    top: 0;
-    transform: translateY(-100%);
-  }
+  // .dropdown-menu{
+  //   bottom: inherit;
+  //   top: 0;
+  //   transform: translateY(-100%);
+  // }
 }

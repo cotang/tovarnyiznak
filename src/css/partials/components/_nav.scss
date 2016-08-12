@@ -52,20 +52,16 @@
   background-color: $light-grey;
   display: none;
   position: absolute;
+  z-index: 2;
   bottom: 0;
   left: 0;
   transform: translateY(100%);
   &__item{
     padding: 10px;
-    position: relative;
-    &:hover, &:focus, &:active{
-      background-color: $light-grey;
-      .nav__link{
-        color: $text-color; 
-      }
-      .dropdown-menu{
-        display: block;
-      }
-    }
   }
+  &__link{
+    &:hover, &:focus, &:active{
+      color: $orange;
+    }
+  }  
 }

@@ -46,8 +46,27 @@ jQuery(document).ready(function($){
       var regionText = $(this).text();
       $(this).closest('.form__region').find(regionInput).val(regionText);
       $(this).closest(regionList).mouseleave();
-    });     
+    }); 
+
+  /* открывание ответа по ссылке "читать далее" */
+  $('.question__details').click(function(e) {
+      e.preventDefault();
+      $(this).closest('.question').find('.question__answer').toggle();      
+  });
+
+  /* увеличение высоты футера при появлении выпадающего меню */
+  $('.footer .nav__item').mouseenter(function() {
+    if ( $(this).has('.dropdown-menu') ) {
+      var infoHeight = $(this).children('.dropdown-menu').outerHeight(true);
+      $('.footer__info').css('height', infoHeight); 
+    }  
+  });
+  $('.footer .nav__item').mouseleave(function() {
+    if ( $(this).has('.dropdown-menu') ) {
+      var infoHeight = $(this).children('.dropdown-menu').outerHeight(true);
+      $('.footer__info').css('height', 'auto'); 
+    }   
+  }); 
 
 });
-
 

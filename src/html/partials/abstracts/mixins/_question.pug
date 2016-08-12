@@ -1,0 +1,10 @@
+mixin question(title, askPerson, askText, answerPerson, answerText)
+  +b.question
+    +e.H3.title #{title}
+    +e.ask
+      +e.person !{askPerson}
+      +e.text !{askText}
+      +e.A.details(href="#") Читать ответ
+    +e.answer
+      +e.person !{answerPerson}
+      +e.text !{answerText}

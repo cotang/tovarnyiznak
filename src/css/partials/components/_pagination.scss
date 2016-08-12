@@ -1,0 +1,28 @@
+.pagination{
+  text-align: left;
+  color: $text-color;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  span{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &__number{
+    display: inline-block;
+    padding: 5px 10px;
+    color: $text-color;
+    &:hover, &:focus, &:active{
+      color: $orange;
+    }
+    &--current{
+      background-color: $text-color;
+      color: $white;
+      &:hover, &:focus, &:active{
+        color: $white;
+      }
+    }
+  } 
+}

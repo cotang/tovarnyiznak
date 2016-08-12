@@ -1,0 +1,27 @@
+.client-questions{
+  margin: 30px 0 20px;
+
+  &__title{
+    font-size: $font-size-title;
+    margin: 30px 0;
+  }
+}
+
+.question{
+  text-align: left;
+  &__title{
+    font-size: $font-size-slogan;
+  }
+  &__person{
+    font-weight: $bold;
+  }
+  &__details{
+    text-decoration: underline;
+  }
+  &__answer{
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: $dark-grey;
+  }
+}
