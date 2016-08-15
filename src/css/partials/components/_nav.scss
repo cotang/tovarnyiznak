@@ -1,10 +1,13 @@
 .nav{
   padding: 0 80px;
   font-size: $font-size-nav;
+  position: relative;
   @include mq($from:xs, $until:md){
     padding: 0 20px;
   }
-  
+  &__hamburger{
+    display: none;
+  }
   &__list{
     padding-left: 0;
     margin: 0;
@@ -64,4 +67,32 @@
       color: $orange;
     }
   }  
+}
+
+.hamburger{
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  span{
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+    height: 3px;
+    background-color: $orange;
+
+    &:after, &:before{
+      content: "";
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: $orange;
+    }
+    &:before{
+      transform: translateY(-250%);
+    }    
+    &:after{
+      transform: translateY(150%);
+    }    
+  }
+
 }

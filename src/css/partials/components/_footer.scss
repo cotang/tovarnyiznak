@@ -42,7 +42,7 @@
   }
   &__rss{
     position: absolute;
-    bottom: 30px;
+    top: 70px;
     left: 80px;
     @include mq($from:xs, $until:sm){
       bottom: 80px;

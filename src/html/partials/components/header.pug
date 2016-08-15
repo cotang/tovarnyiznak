@@ -4,7 +4,7 @@ include ../abstracts/bemto/bemto.pug
 +b.HEADER.header
   +e.inner
     // Logo
-    +e.logo
+    +e.A.logo(href="index.html")
       +e.H1.title Товарный знак
       +e.P.slogan Регистрируем товарные знаки и патенты с 2006 года
     // Info
@@ -20,6 +20,9 @@ include ../abstracts/bemto/bemto.pug
         +b.A.btn--question(href="page-form-question.html") Задать вопрос
   // Nav menu
   +b.NAV.nav
+    +e.hamburger  
+      +b.A.hamburger(href="#")
+        span
     +e.UL.list
       +e.item 
         +e.link--active(href="index.html") Главная
@@ -62,4 +65,5 @@ include ../abstracts/bemto/bemto.pug
         +e.link(href="page.html") Информация
       +e.item
         +e.link(href="page-contacts.html") Контакты 
+
 

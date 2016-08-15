@@ -18,9 +18,14 @@
     }    
   }
   &__logo{
+    display: block;
+    color: $white;
     padding-left: 20px;
     border-left: 30px solid $orange;
     max-width: 400px;
+    &:hover, &:focus{
+      color: $white;
+    }
     @include mq($from:xs, $until:lg){
       margin: 0 auto 20px;
     }    

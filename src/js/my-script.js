@@ -4,15 +4,26 @@ window.slick =              require('./vendor/bower/slick');
 
 jQuery(document).ready(function($){  
 
-    /* галерея благодарственных отзывов */
-    $('.doc-gallery__gallery').slick({
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      centerMode: true,
-      centerPadding: '0',      
-      variableWidth: true
-    });
+
+  /* Hamburger */
+  if ($(window).width() < 767) {
+    $('.nav__hamburger').show();
+    $('.nav__list').hide(); 
+    $('.hamburger').click(function(e){
+      e.preventDefault();
+      $('.nav__list').toggle();
+    });               
+  }
+
+  /* галерея благодарственных отзывов */
+  $('.doc-gallery__gallery').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '0',      
+    variableWidth: true
+  });
 
   /* Open the modal window */
   $('.doc-gallery__img').click( function(e){ 

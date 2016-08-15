@@ -8,12 +8,12 @@ mixin office(items)
       +e.details
         +e.P.address #{item.address}
         +e.P.email 
-          a(href= "mailto:" + item.email, target="_blank") #{item.email}
+          a(href= "mailto:" + item.email, target="_blank", class="bolder") #{item.email}
         if item.fax
           +e.P.fax Тел/факс:
-            a(href= "tel:" + item.fax, target="_blank") #{item.fax}
+            a(href= "tel:" + item.fax, target="_blank", class="bolder") #{item.fax}
         +e.P.tel Телефон:
-          a(href= "tel:" + item.tel, target="_blank") #{item.tel}
+          a(href= "tel:" + item.tel, target="_blank", class="bolder") #{item.tel}
         +e.P.hours Мы работаем с 
           span #{item.workFrom}
           =' до '
