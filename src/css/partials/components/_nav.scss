@@ -24,6 +24,7 @@
   &__item{
     padding: 10px;
     position: relative;
+    @include transition();
     &:before{
       display: none;
     }

@@ -22,6 +22,7 @@ body {
 a {
   color: $link-color;
   text-decoration: none;
+  @include transition();
 
   &:hover,
   &:focus {
