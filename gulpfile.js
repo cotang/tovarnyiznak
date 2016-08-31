@@ -26,10 +26,8 @@ const rename = require('gulp-rename');
 const browserify = require('browserify');
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
-// const transform = require('vinyl-transform');
-// const concat = require('gulp-concat');
+const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-// const streamify = require('gulp-streamify');
 // img
 const newer = require('gulp-newer');
 const imagemin = require('gulp-imagemin');
@@ -102,16 +100,23 @@ gulp.task('sass', function () {
 });
 
 // Compilation js
+// ---
+// gulp.task('js', function() {
+//   return browserify(path.src.browserify)
+//     .bundle()
+//     .pipe(source('script.min.js'))
+//     .pipe(buffer())
+//     .pipe(uglify())
+//     .pipe(gulp.dest(path.build.js))
+//     .pipe(reload({stream: true}));
+// });
 gulp.task('js', function() {
-  return browserify(path.src.browserify)
-    .bundle()
-    .pipe(source('script.min.js'))
-    .pipe(buffer())
+  return gulp.src(path.src.js)
+    .pipe(concat('script.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({stream: true}));
 });
-
 
 // Optimization images
 gulp.task('img', function () {
