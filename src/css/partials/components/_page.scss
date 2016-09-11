@@ -30,6 +30,7 @@
 }
 
 .bottom-buttons{
+  clear: both;
   text-align: center;
   padding: 20px 0 40px;
   @include mq($from:xs, $until:sm){
