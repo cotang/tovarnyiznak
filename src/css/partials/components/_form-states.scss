@@ -18,6 +18,11 @@
 .form-group{
   margin-bottom: 20px;  
 }
+.form-list{
+  padding: 5px;
+  width: 100%;
+  border: 2px solid $white;
+}
 
 .field-question-recaptcha .g-recaptcha > div { 
   margin: 0 auto

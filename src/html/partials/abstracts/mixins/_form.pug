@@ -1,6 +1,6 @@
-- var application = [{name: 'application', title : 'Закажите документ онлайн', application: true, question: false, call: false, button: 'Заказать документ', success: 'Ваша заявка отправлена'}] 
-- var question = [{name: 'question', title : 'Задать вопрос', application: false, question: true, call: false, button: 'Спросить', success: 'Ваш вопрос отправлен'}] 
-- var call = [{name: 'call', title : 'Заказать звонок', application: false, question: false, call: true, button: 'Заказать звонок', success: 'Ваша заявка отправлена'}] 
+- var application = [{name: 'application', title : 'Закажите документ онлайн', application: true, button: 'Заказать документ', success: 'Ваша заявка отправлена'}] 
+- var question = [{name: 'question', title : 'Задать вопрос', question: true, button: 'Спросить', success: 'Ваш вопрос отправлен'}] 
+- var call = [{name: 'call', title : 'Заказать звонок', call: true, button: 'Заказать звонок', success: 'Ваша заявка отправлена'}] 
 
 
 mixin form(items)
@@ -19,48 +19,44 @@ mixin form(items)
         .form-group.has-success
           +e.INPUT.input(type='tel', name='Телефон', placeholder='Телефон')
           p.help-block.help-block-error Ошибка заполнения поля формы
-        .form-group.required.has-success
+        .form-group.required
           +e.INPUT.input(type='email', name='Email', placeholder='Email*')
           p.help-block.help-block-error Ошибка заполнения поля формы
-        .form-group.required.has-success
-          +e.region
-            +e.INPUT.input(type='text', name='Страна', placeholder='Страна*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
-            +e.UL.region-list
-              li.bolder Россия
-              li.bolder Беларусь
-              li.bolder Казахстан
-              li Украина
-              li Азербайджан
-              li Армения    
-              li Грузия
-              li Молдавия
-        .form-group.required.has-success
-          +e.region
-            +e.INPUT.input(type='text', name='Регион', placeholder='Регион*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
-            +e.UL.region-list
-              li Санкт-Петербург и Ленинградская область
-              li Москва и Московская область
-              li Новгородская область
-              li Псковская область
-              li Республика Карелия
-              li Мурманская область
-              li Калининградская область
-              li Вологодская область
-              li Тверская область
+        .form-group.required
+          select.form-list
+            option Россия
+            option Беларусь
+            option Казахстан
+            option Украина
+            option Азербайджан
+            option Армения    
+            option Грузия
+            option Молдавия
+        .form-group.required
+          select.form-list
+            option Санкт-Петербург и Ленинградская область
+            option Москва и Московская область
+            option Новгородская область
+            option Псковская область
+            option Республика Карелия
+            option Мурманская область
+            option Калининградская область
+            option Вологодская область
+            option Тверская область
         if item.question
           .form-group.required.has-success
             +e.TEXTAREA.textarea(type='text', name='Ваш вопрос', placeholder='Ваш вопрос*')
             p.help-block.help-block-error Ошибка заполнения поля формы
-        if item.call
-          .form-group.required.has-success
-            +e.time
-              +e.SPAN.time-text Желаемое время звонка c
-              +e.INPUT.input--time(type='time', name='Звонить с') 
-              | до
-              +e.INPUT.input--time(type='time', name='Звонить до') 
-            p.help-block.help-block-error Ошибка заполнения поля формы
-        .form-group.captcha
-        +b.BUTTON.btn(type='submit') #{item.button}
-        p.help-block.help-block-success #{item.success}
+        //- if item.call
+        //-   .form-group.required.has-success
+        //-     +e.time
+        //-       +e.SPAN.time-text Желаемое время звонка c
+        //-       +e.INPUT.input--time(type='time', name='Звонить с') 
+        //-       | до
+        //-       +e.INPUT.input--time(type='time', name='Звонить до') 
+        //-     p.help-block.help-block-error Ошибка заполнения поля формы
+        .form-group.required
+          .form-group.captcha
+        .form-group.required
+          +b.BUTTON.btn(type='submit') #{item.button}
+          p.help-block.help-block-success #{item.success}

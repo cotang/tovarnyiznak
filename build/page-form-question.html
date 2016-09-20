@@ -162,50 +162,46 @@
                 <input class="form__input" type="tel" name="Телефон" placeholder="Телефон" />
                 <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
               </div>
-              <div class="form-group required has-success">
+              <div class="form-group required">
                 <input class="form__input" type="email" name="Email" placeholder="Email*" />
                 <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
               </div>
-              <div class="form-group required has-success">
-                <div class="form__region">
-                  <input class="form__input" type="text" name="Страна" placeholder="Страна*" />
-                  <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                  <ul class="form__region-list">
-                    <li class="bolder">Россия</li>
-                    <li class="bolder">Беларусь</li>
-                    <li class="bolder">Казахстан</li>
-                    <li>Украина</li>
-                    <li>Азербайджан</li>
-                    <li>Армения </li>
-                    <li>Грузия</li>
-                    <li>Молдавия</li>
-                  </ul>
-                </div>
+              <div class="form-group required">
+                <select class="form-list">
+                  <option>Россия</option>
+                  <option>Беларусь</option>
+                  <option>Казахстан</option>
+                  <option>Украина</option>
+                  <option>Азербайджан</option>
+                  <option>Армения </option>
+                  <option>Грузия</option>
+                  <option>Молдавия</option>
+                </select>
               </div>
-              <div class="form-group required has-success">
-                <div class="form__region">
-                  <input class="form__input" type="text" name="Регион" placeholder="Регион*" />
-                  <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                  <ul class="form__region-list">
-                    <li>Санкт-Петербург и Ленинградская область</li>
-                    <li>Москва и Московская область</li>
-                    <li>Новгородская область</li>
-                    <li>Псковская область</li>
-                    <li>Республика Карелия</li>
-                    <li>Мурманская область</li>
-                    <li>Калининградская область</li>
-                    <li>Вологодская область</li>
-                    <li>Тверская область</li>
-                  </ul>
-                </div>
+              <div class="form-group required">
+                <select class="form-list">
+                  <option>Санкт-Петербург и Ленинградская область</option>
+                  <option>Москва и Московская область</option>
+                  <option>Новгородская область</option>
+                  <option>Псковская область</option>
+                  <option>Республика Карелия</option>
+                  <option>Мурманская область</option>
+                  <option>Калининградская область</option>
+                  <option>Вологодская область</option>
+                  <option>Тверская область</option>
+                </select>
               </div>
               <div class="form-group required has-success">
                 <textarea class="form__textarea" type="text" name="Ваш вопрос" placeholder="Ваш вопрос*"></textarea>
                 <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
               </div>
-              <div class="form-group captcha"></div>
-              <button class="btn" type="submit">Спросить</button>
-              <p class="help-block help-block-success">Ваш вопрос отправлен</p>
+              <div class="form-group required">
+                <div class="form-group captcha"></div>
+              </div>
+              <div class="form-group required">
+                <button class="btn" type="submit">Спросить</button>
+                <p class="help-block help-block-success">Ваш вопрос отправлен</p>
+              </div>
             </form>
           </section>
         </div>
